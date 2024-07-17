@@ -1,1 +1,1 @@
-yarn eslint; yarn prettier
+npx lint-staged
