@@ -9,5 +9,12 @@ module.exports = {
 		'semi': ['off', 'never'],
 		'no-console': ['error', { allow: ['warn', 'error'] }],
 		'comma-dangle': ['error', 'never']
-	}
+	},
+	overrides: [
+		{
+			// Test files only
+			files: ['**/?(*.)+(spec|test).[jt]s?(x)'],
+			extends: ['plugin:testing-library/react-native']
+		}
+	]
 }
