@@ -12,4 +12,4 @@ Where the first argument becomes a branch name and the second one PR name.
 
 ### You don't have to add any reviewers, label etc. to your PR, it'll be added automatically.
 
-TEST
+TESTTEST
