@@ -1,7 +1,7 @@
-import CreateEvent from '../../../app/(tabs)/CreateEvent'
+import CreateEvent from '@app/(tabs)/CreateEvent'
 import { renderRouter, screen } from 'expo-router/testing-library'
 
-describe('CreateEventContent', () => {
+describe('CreateEvent', () => {
 	it('renders component', () => {
 		renderRouter(
 			{
