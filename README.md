@@ -7,6 +7,7 @@
 
 We should use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) but with some minor changes; Anything related to `build` or `ci` should be marked as `devops`. We should be using `feat`, `bug`, `chore`, `devops`, `test`, `docs`.
 
-Example: `gt create 'docs/README-update' -m 'docs: README update'`
-
+Example: `gt create 'docs/README-update' -m 'docs: README update'`\
 Where the first argument becomes a branch name and the second one PR name.
+
+### You don't have to add any reviewers, label etc. to your PR, it'll be added automatically.
