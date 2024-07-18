@@ -14,7 +14,7 @@ module.exports = {
 		{
 			// Test files only
 			files: ['**/?(*.)+(spec|test).[jt]s?(x)'],
-			extends: ['plugin:testing-library/react-native']
+			extends: ['plugin:testing-library/react']
 		}
 	]
 }
