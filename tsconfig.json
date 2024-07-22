@@ -4,6 +4,7 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
+			"@assets/*": ["assets/*"],
       "@icons/*": ["assets/Icons/*"],
       "@constants": ["src/constants/index.ts"],
       "@components": ["src/components/index.ts"],
