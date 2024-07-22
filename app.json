@@ -28,7 +28,12 @@
     },
     "plugins": [
       "expo-router",
-      "expo-font"
+      [
+				"expo-font",
+        {
+          "fonts": ["@tamagui/font-inter/otf/Inter-Medium.otf", "@tamagui/font-inter/otf/Inter-Bold.otf"]
+        }
+			]
     ],
     "experiments": {
       "typedRoutes": true,
