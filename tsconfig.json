@@ -8,7 +8,8 @@
       "@constants": ["src/constants/index.ts"],
       "@components": ["src/components/index.ts"],
       "@event/*": ["app/Event/*"],
-			"@types": ["src/types/index.ts"]
+			"@types": ["src/types/index.ts"],
+			"@app/*": ["app/*"],
     },
 		"types": ["@testing-library/jest-native", "jest"]
   },
