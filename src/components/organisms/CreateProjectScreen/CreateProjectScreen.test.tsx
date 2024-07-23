@@ -1,14 +1,14 @@
-import CreateEvent from '@app/(tabs)/CreateEvent'
+import { CreateProjectScreen } from './CreateProjectScreen'
 import { renderRouter, screen } from 'expo-router/testing-library'
 
 describe('CreateEvent', () => {
 	it('renders component', () => {
 		renderRouter(
 			{
-				'/(tabs)/create-event': CreateEvent
+				'/(tabs)/create-project': CreateProjectScreen
 			},
 			{
-				initialUrl: '/(tabs)/create-event'
+				initialUrl: '/(tabs)/create-project'
 			}
 		)
 		expect(screen.getByText('Fookin CreateEvent page innit')).toBeOnTheScreen()

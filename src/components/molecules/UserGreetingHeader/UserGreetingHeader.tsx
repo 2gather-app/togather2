@@ -1,4 +1,3 @@
-import ProfilePageIcon from '@icons/NavigationIcons/profile-page-icon.svg'
 import { StyleSheet, Text, View } from 'react-native'
 
 export function UserGreetingHeader() {
@@ -8,7 +7,6 @@ export function UserGreetingHeader() {
 				<Text style={styles.userGreeting}>Hello</Text>
 				<Text style={styles.username}>Mr lil Shit</Text>
 			</View>
-			<ProfilePageIcon color={'#FF00FF'} />
 		</View>
 	)
 }

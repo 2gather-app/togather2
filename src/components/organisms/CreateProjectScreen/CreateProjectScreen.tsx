@@ -1,7 +1,7 @@
 import { Text, View } from 'react-native'
 import { Stack } from 'expo-router'
 
-export default function CreateEvent() {
+export function CreateProjectScreen() {
 	return (
 		<View>
 			<Stack.Screen options={{ headerShown: true, title: 'Create Event' }} />
