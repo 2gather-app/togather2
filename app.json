@@ -31,7 +31,18 @@
       [
 				"expo-font",
         {
-          "fonts": ["@tamagui/font-inter/otf/Inter-Medium.otf", "@tamagui/font-inter/otf/Inter-Bold.otf"]
+          "fonts": [
+						"@tamagui/font-inter/otf/Inter-Medium.otf", 
+						"@tamagui/font-inter/otf/Inter-Bold.otf", 
+						"./assets/fonts/InstrumentSans/static/InstrumentSans-Regular.ttf",
+						"./assets/fonts/InstrumentSans/static/InstrumentSans-Bold.ttf",
+						"./assets/fonts/InstrumentSans/static/InstrumentSans-BoldItalic.ttf",
+						"./assets/fonts/InstrumentSans/static/InstrumentSans-Italic.ttf",
+						"./assets/fonts/InstrumentSans/static/InstrumentSans-Medium.ttf",
+						"./assets/fonts/InstrumentSans/static/InstrumentSans-MediumItalic.ttf",
+						"./assets/fonts/InstrumentSans/static/InstrumentSans-SemiBold.ttf",
+						"./assets/fonts/InstrumentSans/static/InstrumentSans-SemiBoldItalic.ttf"
+					]
         }
 			]
     ],

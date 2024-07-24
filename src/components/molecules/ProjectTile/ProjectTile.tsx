@@ -21,13 +21,13 @@ export const ProjectTile: FC<ProjectTileProps> = ({ title, subtitle }) => {
 			>
 				<Text
 					fontSize={18}
-					fontWeight="500"
+					fontWeight="$5"
 				>
 					{title}
 				</Text>
 				<Text
 					fontSize={12}
-					fontWeight="400"
+					fontWeight="$4"
 				>
 					{subtitle}
 				</Text>

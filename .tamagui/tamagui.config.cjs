@@ -44414,7 +44414,38 @@ var Text4 = (0, import_core59.styled)(import_core59.Text, {
 var import_core60 = require("@tamagui/core");
 
 // tamagui.config.ts
-var tamaguiConfig = createTamagui(config);
+var InstrumentSans = (0, import_core60.createFont)({
+  family: "InstrumentSans",
+  size: {
+    1: 14,
+    2: 16,
+    3: 18,
+    4: 22,
+    5: 28,
+    6: 32
+  },
+  weight: {
+    3: "300",
+    4: "400",
+    5: "500",
+    6: "600",
+    7: "700"
+  },
+  face: {
+    300: { normal: "InstrumentSansLight" },
+    400: { normal: "InstrumentSansRegular" },
+    500: { normal: "InstrumentSansMedium" },
+    600: { normal: "InstrumentSansSemiBold", italic: "InstrumentSansSemiBoldItalic" },
+    700: { normal: "InstrumentSansBold", italic: "InstrumentSansBoldItalic" }
+  }
+});
+var tamaguiConfig = createTamagui({
+  ...config,
+  fonts: {
+    body: InstrumentSans,
+    heading: InstrumentSans
+  }
+});
 var tamagui_config_default = tamaguiConfig;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

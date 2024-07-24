@@ -9,7 +9,15 @@ export default function TabsLayout() {
 	const colorScheme = useColorScheme()
 	const [loaded] = useFonts({
 		Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
-		InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf')
+		InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
+		InstrumentSansRegular: require('@assets/fonts/InstrumentSans/static/InstrumentSans-Regular.ttf'),
+		InstrumentSansBold: require('@assets/fonts/InstrumentSans/static/InstrumentSans-Bold.ttf'),
+		InstrumentSansBoldItalic: require('@assets/fonts/InstrumentSans/static/InstrumentSans-BoldItalic.ttf'),
+		InstrumentSansItalic: require('@assets/fonts/InstrumentSans/static/InstrumentSans-Italic.ttf'),
+		InstrumentSansMedium: require('@assets/fonts/InstrumentSans/static/InstrumentSans-Medium.ttf'),
+		InstrumentSansMediumItalic: require('@assets/fonts/InstrumentSans/static/InstrumentSans-MediumItalic.ttf'),
+		InstrumentSansSemiBold: require('@assets/fonts/InstrumentSans/static/InstrumentSans-SemiBold.ttf'),
+		InstrumentSansSemiBoldItalic: require('@assets/fonts/InstrumentSans/static/InstrumentSans-SemiBoldItalic.ttf')
 	})
 
 	if (!loaded) return null
