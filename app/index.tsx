@@ -1,4 +1,5 @@
 import { Redirect } from 'expo-router'
+import '../i18n'
 
 export default function MainIndex() {
 	return <Redirect href="/(tabs)/Home" />
