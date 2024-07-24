@@ -3059,6 +3059,13 @@
     "@tamagui/use-controllable-state" "1.103.0"
     reforest "^0.13.0"
 
+"@tamagui/helpers-icon@1.103.0":
+  version "1.103.0"
+  resolved "https://registry.yarnpkg.com/@tamagui/helpers-icon/-/helpers-icon-1.103.0.tgz#3d0ffae0f14468850ceb930194111f6e29ef2833"
+  integrity sha512-YI0gqPAXTNmIDYE7ZG53xr35CBKkznmjAa6k0HHs7R4gqhGGdnyY2ZeEgqMuDfalAwKBAgAzM7tJb+wWzzsYdg==
+  dependencies:
+    "@tamagui/core" "1.103.0"
+
 "@tamagui/helpers-node@1.103.0":
   version "1.103.0"
   resolved "https://registry.yarnpkg.com/@tamagui/helpers-node/-/helpers-node-1.103.0.tgz#bc86004192fb8e761fc98e3b1b5ff799b890387b"
@@ -3125,6 +3132,14 @@
     "@tamagui/stacks" "1.103.0"
     "@tamagui/text" "1.103.0"
     "@tamagui/web" "1.103.0"
+
+"@tamagui/lucide-icons@^1.103.0":
+  version "1.103.0"
+  resolved "https://registry.yarnpkg.com/@tamagui/lucide-icons/-/lucide-icons-1.103.0.tgz#f49f8c5ca2125bfb377a649d6dd66b7178edc5a9"
+  integrity sha512-LOak55hh1lepK6ws2QjeIot7bwqHUj9mr/oJDTjpWrisUMlIgnt4NsbrzFzzsEJfavtyiPJeKW4KJomY9j7yAA==
+  dependencies:
+    "@tamagui/core" "1.103.0"
+    "@tamagui/helpers-icon" "1.103.0"
 
 "@tamagui/metro-plugin@^1.103.0":
   version "1.103.0"
@@ -9889,13 +9904,14 @@ react-native-svg-transformer@^1.4.0:
     "@svgr/plugin-svgo" "^8.1.0"
     path-dirname "^1.0.2"
 
-react-native-svg@15.2.0:
-  version "15.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-15.2.0.tgz#9561a6b3bd6b44689f437ba13182afee33bd5557"
-  integrity sha512-R0E6IhcJfVLsL0lRmnUSm72QO+mTqcAOM5Jb8FVGxJqX3NfJMlMP0YyvcajZiaRR8CqQUpEoqrY25eyZb006kw==
+react-native-svg@^15.4.0:
+  version "15.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-15.4.0.tgz#a4929deece1f438282e18d007b12af5e4f718fda"
+  integrity sha512-zkBEbme/Dba4yqreg/oI2P6/6LrLywWY7HhaSwpU7Pb5COpTd2fV6/ShsgZz8GRFFdidUPwWmx01FITUsjhkmw==
   dependencies:
     css-select "^5.1.0"
     css-tree "^1.1.3"
+    warn-once "0.1.1"
 
 react-native-web-internals@1.103.0:
   version "1.103.0"
@@ -11731,7 +11747,7 @@ walker@^1.0.7, walker@^1.0.8:
   dependencies:
     makeerror "1.0.12"
 
-warn-once@^0.1.0:
+warn-once@0.1.1, warn-once@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/warn-once/-/warn-once-0.1.1.tgz#952088f4fb56896e73fd4e6a3767272a3fccce43"
   integrity sha512-VkQZJbO8zVImzYFteBXvBOZEl1qL175WH8VmZcxF2fZAoudNhNDvHi+doCaAEdU2l2vtcIwa2zn0QK5+I1HQ3Q==

@@ -1,4 +1,4 @@
-import { UserGreetingHeader } from '@components'
+import { ProjectTile, UserGreetingHeader } from '@components'
 import { Searchbar } from 'react-native-paper'
 import { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
@@ -31,6 +31,11 @@ export default function Home() {
 				placeholder="Search"
 				onChangeText={setSearchQuery}
 				value={searchQuery}
+			/>
+
+			<ProjectTile
+				title="Mobile app for furniture renovation"
+				subtitle="Secondary text"
 			/>
 		</View>
 	)
