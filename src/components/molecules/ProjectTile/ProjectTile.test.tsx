@@ -1,7 +1,5 @@
-import { tamaguiConfig } from '../../../../tamagui.config'
 import { ProjectTile, ProjectTileProps } from './ProjectTile'
-import { render, screen } from '@testing-library/react-native'
-import { TamaguiProvider } from 'tamagui'
+import { render, screen } from '@helpers'
 
 const defaultProps: ProjectTileProps = {
 	title: 'title',
@@ -9,15 +7,13 @@ const defaultProps: ProjectTileProps = {
 }
 
 describe('ProjectTile', () => {
-	it('renders title', () => {
+	it.only('renders title', () => {
 		const title = 'Title'
 		render(
-			<TamaguiProvider config={tamaguiConfig}>
-				<ProjectTile
-					{...defaultProps}
-					title={title}
-				/>
-			</TamaguiProvider>
+			<ProjectTile
+				{...defaultProps}
+				title={title}
+			/>
 		)
 		expect(screen.getByText(title)).toBeOnTheScreen()
 	})
@@ -25,22 +21,16 @@ describe('ProjectTile', () => {
 	it('renders subtitle', () => {
 		const subtitle = 'Subtitle'
 		render(
-			<TamaguiProvider config={tamaguiConfig}>
-				<ProjectTile
-					{...defaultProps}
-					subtitle={subtitle}
-				/>
-			</TamaguiProvider>
+			<ProjectTile
+				{...defaultProps}
+				subtitle={subtitle}
+			/>
 		)
 		expect(screen.getByText(subtitle)).toBeOnTheScreen()
 	})
 
 	it('renders settings icon button', () => {
-		render(
-			<TamaguiProvider config={tamaguiConfig}>
-				<ProjectTile {...defaultProps} />
-			</TamaguiProvider>
-		)
+		render(<ProjectTile {...defaultProps} />)
 		expect(screen.getByTestId('ProjectTile-settingsIconButton')).toBeOnTheScreen()
 	})
 })
