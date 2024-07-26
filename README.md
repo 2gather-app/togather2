@@ -11,3 +11,7 @@ Example: `gt create 'docs/README-update' -m 'docs: README update'`\
 Where the first argument becomes a branch name and the second one PR name.
 
 ### You don't have to add any reviewers, label etc. to your PR, it'll be added automatically.
+
+## Theme
+
+We use [tamagui](https://tamagui.dev/) for anything theme and components related. We also use [Lucide Icons](https://tamagui.dev/ui/lucide-icons) which come together with the tamagui. Also pay attention for tokens (we use the default settings currently)[https://tamagui.dev/docs/intro/tokens]
