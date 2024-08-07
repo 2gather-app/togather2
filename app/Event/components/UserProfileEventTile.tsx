@@ -1,5 +1,4 @@
 import { Colors } from '@constants'
-import StarIcon from '@icons/OtherIcons/star-icon.svg'
 import { User } from '@types'
 import { FC } from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
@@ -24,11 +23,6 @@ export const UserProfileEventTile: FC<UserProfileEventTileProps> = ({ user }: Us
 				<Text style={styles.name}>{user.name}</Text>
 				<View style={styles.ratingContainer}>
 					<Text style={styles.rating}>{user.rating}</Text>
-					<StarIcon
-						color={Colors.Accent}
-						width={20}
-						height={13}
-					/>
 				</View>
 			</View>
 		</View>

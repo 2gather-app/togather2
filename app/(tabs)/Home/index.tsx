@@ -9,7 +9,8 @@ export default function Home() {
 
 	return (
 		<View style={styles.pageContainer}>
-			<Stack.Screen options={{ headerShown: true, title: 'Home' }} />
+			<Stack.Screen options={{ title: 'Home' }} />
+
 			<View>
 				<Text>You wanna test navigating with route parameters? Aight!</Text>
 				<Text>Pressie pressie them links below. Come on now mate! It's bloody fun, innit! </Text>

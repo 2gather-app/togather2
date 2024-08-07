@@ -1,57 +1,44 @@
 import { Colors } from '@constants'
-import CreateEventPageIcon from '@icons/NavigationIcons/create-event-page-icon.svg'
-import ExplorePageIcon from '@icons/NavigationIcons/explore-page-icon.svg'
-import HomePageIcon from '@icons/NavigationIcons/home-page-icon.svg'
-import NotificationsPageIcon from '@icons/NavigationIcons/notifications-page-icon.svg'
-import ProfilePageIcon from '@icons/NavigationIcons/profile-page-icon.svg'
 import { Tabs } from 'expo-router'
 
 export default function TabsLayout() {
-	const iconColor = (focused: boolean) => (focused ? Colors.Accent : '#F2F2F2')
+	// const iconColor = (focused: boolean) => (focused ? Colors.Accent : '#000')
+
 	return (
 		<Tabs
 			screenOptions={{
-				headerShown: false,
-				tabBarStyle: { backgroundColor: 'black', margin: 10, borderRadius: 12 },
-				tabBarShowLabel: false
+				headerShown: false
 			}}
 		>
 			<Tabs.Screen
 				name="Home"
 				options={{
-					tabBarIcon: ({ focused }) => <HomePageIcon color={iconColor(focused)} />
+					tabBarActiveTintColor: Colors.Accent
 				}}
 			/>
 			<Tabs.Screen
-				name="Explore"
+				name="News"
 				options={{
-					tabBarLabel: 'Explore',
-					title: 'Explore',
-					tabBarIcon: ({ focused }) => <ExplorePageIcon color={iconColor(focused)} />
+					tabBarActiveTintColor: Colors.Accent
 				}}
 			/>
 			<Tabs.Screen
-				name="CreateEvent"
+				name="CreateProject"
 				options={{
-					tabBarLabel: 'Create Event',
-					title: 'Create Event',
-					tabBarIcon: ({ focused }) => <CreateEventPageIcon color={iconColor(focused)} />
+					tabBarActiveTintColor: Colors.Accent,
+					tabBarLabel: 'Add'
 				}}
 			/>
 			<Tabs.Screen
-				name="Notifications"
+				name="Messages"
 				options={{
-					tabBarLabel: 'Notifications',
-					title: 'Notifications',
-					tabBarIcon: ({ focused }) => <NotificationsPageIcon color={iconColor(focused)} />
+					tabBarActiveTintColor: Colors.Accent
 				}}
 			/>
 			<Tabs.Screen
 				name="Profile"
 				options={{
-					tabBarLabel: 'Profile',
-					title: 'Profile',
-					tabBarIcon: ({ focused }) => <ProfilePageIcon color={iconColor(focused)} />
+					tabBarActiveTintColor: Colors.Accent
 				}}
 			/>
 		</Tabs>

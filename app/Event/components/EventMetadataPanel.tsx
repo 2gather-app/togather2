@@ -1,7 +1,4 @@
 import { Colors } from '@constants'
-import CalendarIcon from '@icons/OtherIcons/calendar-icon.svg'
-import LocationIcon from '@icons/OtherIcons/location-icon.svg'
-import ProfileIcon from '@icons/OtherIcons/profile-icon.svg'
 import { StyleSheet, Text, View } from 'react-native'
 
 type EventMetadataPanelProps = {
@@ -17,18 +14,15 @@ export const EventMetadataPanel = ({ date, participants, distance }: EventMetada
 		<View style={styles.metadataRow}>
 			<View style={styles.metadataItem}>
 				{/* TODO: implement MobX store for event details and read date, num of participants and distance from it or pass this data as a prop */}
-				<CalendarIcon color={Colors.Placeholder} />
 				<Text style={styles.metadataItemText}>{date}</Text>
 			</View>
 			<Divider />
 
 			<View style={styles.metadataItem}>
-				<ProfileIcon color={Colors.Placeholder} />
 				<Text style={styles.metadataItemText}>{participants}</Text>
 			</View>
 			<Divider />
 			<View style={styles.metadataItem}>
-				<LocationIcon color={Colors.Placeholder} />
 				<Text style={styles.metadataItemText}>{distance} km</Text>
 				{/* TODO: Distance should be checked and converted if necessary  */}
 			</View>

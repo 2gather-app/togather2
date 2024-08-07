@@ -1,7 +1,4 @@
 import { Colors } from '@constants'
-import CategoryBasketballIcon from '@icons/CategoryIcons/category-basketball-icon.svg'
-import HeartIcon from '@icons/OtherIcons/heart-icon.svg'
-import LeftArrowIcon from '@icons/OtherIcons/left-arrow-icon.svg'
 import { Icons } from '@types'
 import { StyleSheet, Text, TextStyle, TouchableHighlight, View } from 'react-native'
 
@@ -36,11 +33,11 @@ export function CustomIconButton({
 	const getChosenIcon = (icon: Icons) => {
 		switch (icon) {
 			case 'left-arrow':
-				return <LeftArrowIcon color={iconColor ?? DEFAULT_ICON_COLOR} />
+			// return <LeftArrowIcon color={iconColor ?? DEFAULT_ICON_COLOR} />
 			case 'heart':
-				return <HeartIcon color={iconColor ?? DEFAULT_ICON_COLOR} />
+			// return <HeartIcon color={iconColor ?? DEFAULT_ICON_COLOR} />
 			default:
-				return <CategoryBasketballIcon color={iconColor ?? DEFAULT_ICON_COLOR} />
+			// return <CategoryBasketballIcon color={iconColor ?? DEFAULT_ICON_COLOR} />
 		}
 	}
 
@@ -53,7 +50,7 @@ export function CustomIconButton({
 			style={[styles.buttonContainer, buttonColor ? { backgroundColor: buttonColor } : null]}
 		>
 			<View style={styles.buttonContentWrapper}>
-				{icon ? getChosenIcon(icon) : null}
+				{/* {icon ? getChosenIcon(icon) : null} */}
 				{labelText ? <Text style={buttonLabelStyles}>{labelText}</Text> : null}
 			</View>
 		</TouchableHighlight>

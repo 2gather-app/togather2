@@ -1,5 +1,5 @@
 import { Stack } from 'expo-router'
 
-export default function NotificationsLayout() {
+export default function NewsLayout() {
 	return <Stack />
 }

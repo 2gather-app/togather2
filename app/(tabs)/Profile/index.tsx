@@ -4,7 +4,7 @@ import { Link, Stack } from 'expo-router'
 export default function Profile() {
 	return (
 		<View>
-			<Stack.Screen options={{ headerShown: true, title: 'Profile' }} />
+			<Stack.Screen options={{ title: 'Profile' }} />
 			<Text>Fookin Profile page innit</Text>
 			<Link
 				href="/Home"
