@@ -1,7 +1,7 @@
 import { CreateProjectScreen } from './CreateProjectScreen'
 import { renderRouter, screen } from 'expo-router/testing-library'
 
-describe('CreateEvent', () => {
+describe('CreateProjectScreen', () => {
 	it('renders component', () => {
 		renderRouter(
 			{
@@ -11,6 +11,6 @@ describe('CreateEvent', () => {
 				initialUrl: '/(tabs)/create-project'
 			}
 		)
-		expect(screen.getByText('Fookin CreateEvent page innit')).toBeOnTheScreen()
+		expect(screen.getByText('Create project screen')).toBeOnTheScreen()
 	})
 })

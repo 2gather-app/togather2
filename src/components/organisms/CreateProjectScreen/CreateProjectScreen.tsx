@@ -4,8 +4,8 @@ import { Stack } from 'expo-router'
 export function CreateProjectScreen() {
 	return (
 		<View>
-			<Stack.Screen options={{ headerShown: true, title: 'Create Event' }} />
-			<Text>Fookin CreateEvent page innit</Text>
+			<Stack.Screen options={{ title: 'Create Event' }} />
+			<Text>Create project screen</Text>
 		</View>
 	)
 }
