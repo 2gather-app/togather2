@@ -10,6 +10,7 @@
       "@event/*": ["app/Event/*"],
 			"@types": ["src/types/index.ts"],
 			"@app/*": ["app/*"],
+			"@helpers": ["src/helpers/index.ts"]
     },
 		"types": ["@testing-library/jest-native", "jest"]
   },
