@@ -11,6 +11,6 @@ describe('HomeScreen', () => {
 				initialUrl: '/(tabs)/home'
 			}
 		)
-		expect(screen.getByText('Create project screen')).toBeOnTheScreen()
+		expect(screen.getByText('Home screen')).toBeOnTheScreen()
 	})
 })
